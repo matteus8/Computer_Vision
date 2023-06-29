@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classification Result</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: beige;
+            font-family: Arial, sans-serif;
+        }
+        .result-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(199, 199, 219);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 24px;
+        }
+        .back-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Image Classification Result:</h1>
+        <p>The uploaded image is classified as: {{ classification }}</p>
+        <a href="/" class="back-button">Upload a Different Photo</a>
+    </div>
+</body>
+</html>

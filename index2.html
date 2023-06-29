@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classification</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: beige;
+            font-family: Arial, sans-serif;
+        }
+        .upload-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(199, 199, 219);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .upload-label {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .upload-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Image Classification</h1>
+        <form class="upload-form" action="/classify" method="post" enctype="multipart/form-data">
+            <label class="upload-label" for="file">Upload an Image:</label>
+            <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png" required>
+            <button class="upload-button" type="submit">Classify</button>
+        </form>
+    </div>
+</body>
+</html>
